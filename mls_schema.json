@@ -1,0 +1,423 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "@attributes": {
+      "type": "object",
+      "properties": {
+        "ID": {
+          "type": "string"
+        },
+        "LastUpdated": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "ID",
+        "LastUpdated"
+      ]
+    },
+    "ListingID": {
+      "type": "string"
+    },
+    "AgentDetails": {
+      "type": "object",
+      "properties": {
+        "@attributes": {
+          "type": "object",
+          "properties": {
+            "ID": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "ID"
+          ]
+        },
+        "Name": {
+          "type": "string"
+        },
+        "Phones": {
+          "type": "object",
+          "properties": {
+            "Phone": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "Phone"
+          ]
+        },
+        "Websites": {
+          "type": "object",
+          "properties": {
+            "Website": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "Website"
+          ]
+        },
+        "Office": {
+          "type": "object",
+          "properties": {
+            "@attributes": {
+              "type": "object",
+              "properties": {
+                "ID": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ID"
+              ]
+            },
+            "Name": {
+              "type": "string"
+            },
+            "Address": {
+              "type": "array",
+              "items": {}
+            },
+            "Phones": {
+              "type": "object",
+              "properties": {
+                "Phone": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": [
+                "Phone"
+              ]
+            },
+            "Websites": {
+              "type": "object",
+              "properties": {
+                "Website": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": [
+                "Website"
+              ]
+            }
+          },
+          "required": [
+            "@attributes",
+            "Name",
+            "Address",
+            "Phones",
+            "Websites"
+          ]
+        },
+        "Position": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "@attributes",
+        "Name",
+        "Phones",
+        "Websites",
+        "Office",
+        "Position"
+      ]
+    },
+    "Board": {
+      "type": "string"
+    },
+    "Business": {
+      "type": "array",
+      "items": {}
+    },
+    "Building": {
+      "type": "object",
+      "properties": {
+        "BathroomTotal": {
+          "type": "string"
+        },
+        "BedroomsTotal": {
+          "type": "string"
+        },
+        "BedroomsAboveGround": {
+          "type": "string"
+        },
+        "ArchitecturalStyle": {
+          "type": "string"
+        },
+        "BasementFeatures": {
+          "type": "string"
+        },
+        "BasementType": {
+          "type": "string"
+        },
+        "ConstructionStyleAttachment": {
+          "type": "string"
+        },
+        "CoolingType": {
+          "type": "string"
+        },
+        "ExteriorFinish": {
+          "type": "string"
+        },
+        "FireplacePresent": {
+          "type": "string"
+        },
+        "HeatingFuel": {
+          "type": "string"
+        },
+        "HeatingType": {
+          "type": "string"
+        },
+        "Rooms": {
+          "type": "object",
+          "properties": {
+            "Room": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Type": {
+                    "type": "string"
+                  },
+                  "Width": {
+                    "type": "string"
+                  },
+                  "Length": {
+                    "type": "string"
+                  },
+                  "Level": {
+                    "type": "string"
+                  },
+                  "Dimension": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "Type",
+                  "Width",
+                  "Length",
+                  "Level",
+                  "Dimension"
+                ]
+              }
+            }
+          },
+          "required": [
+            "Room"
+          ]
+        },
+        "SizeInterior": {
+          "type": "array",
+          "items": {}
+        },
+        "StoriesTotal": {
+          "type": "string"
+        },
+        "Type": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "BathroomTotal",
+        "BedroomsTotal",
+        "BedroomsAboveGround",
+        "ArchitecturalStyle",
+        "BasementFeatures",
+        "BasementType",
+        "ConstructionStyleAttachment",
+        "CoolingType",
+        "ExteriorFinish",
+        "FireplacePresent",
+        "HeatingFuel",
+        "HeatingType",
+        "Rooms",
+        "SizeInterior",
+        "StoriesTotal",
+        "Type"
+      ]
+    },
+    "Land": {
+      "type": "object",
+      "properties": {
+        "SizeTotalText": {
+          "type": "string"
+        },
+        "Acreage": {
+          "type": "string"
+        },
+        "SizeIrregular": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "SizeTotalText",
+        "Acreage",
+        "SizeIrregular"
+      ]
+    },
+    "Address": {
+      "type": "object",
+      "properties": {
+        "StreetAddress": {
+          "type": "string"
+        },
+        "AddressLine1": {
+          "type": "string"
+        },
+        "City": {
+          "type": "string"
+        },
+        "Province": {
+          "type": "string"
+        },
+        "PostalCode": {
+          "type": "string"
+        },
+        "Country": {
+          "type": "string"
+        },
+        "CommunityName": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "StreetAddress",
+        "AddressLine1",
+        "City",
+        "Province",
+        "PostalCode",
+        "Country",
+        "CommunityName"
+      ]
+    },
+    "AlternateURL": {
+      "type": "object",
+      "properties": {
+        "BrochureLink": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "BrochureLink"
+      ]
+    },
+    "ListingContractDate": {
+      "type": "string"
+    },
+    "OwnershipType": {
+      "type": "string"
+    },
+    "ParkingSpaces": {
+      "type": "object",
+      "properties": {
+        "Parking": {
+          "type": "object",
+          "properties": {
+            "Name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "Name"
+          ]
+        }
+      },
+      "required": [
+        "Parking"
+      ]
+    },
+    "ParkingSpaceTotal": {
+      "type": "string"
+    },
+    "Photo": {
+      "type": "object",
+      "properties": {
+        "PropertyPhoto": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "SequenceId": {
+                "type": "string"
+              },
+              "LastUpdated": {
+                "type": "string"
+              },
+              "PhotoLastUpdated": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "SequenceId",
+              "LastUpdated",
+              "PhotoLastUpdated"
+            ]
+          }
+        }
+      },
+      "required": [
+        "PropertyPhoto"
+      ]
+    },
+    "Price": {
+      "type": "string"
+    },
+    "PropertyType": {
+      "type": "string"
+    },
+    "PublicRemarks": {
+      "type": "string"
+    },
+    "TransactionType": {
+      "type": "string"
+    },
+    "UtilitiesAvailable": {
+      "type": "array",
+      "items": {}
+    },
+    "AnalyticsClick": {
+      "type": "string"
+    },
+    "AnalyticsView": {
+      "type": "string"
+    },
+    "MoreInformationLink": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "@attributes",
+    "ListingID",
+    "AgentDetails",
+    "Board",
+    "Business",
+    "Building",
+    "Land",
+    "Address",
+    "AlternateURL",
+    "ListingContractDate",
+    "OwnershipType",
+    "ParkingSpaces",
+    "ParkingSpaceTotal",
+    "Photo",
+    "Price",
+    "PropertyType",
+    "PublicRemarks",
+    "TransactionType",
+    "UtilitiesAvailable",
+    "AnalyticsClick",
+    "AnalyticsView",
+    "MoreInformationLink"
+  ]
+}
