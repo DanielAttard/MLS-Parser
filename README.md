@@ -1,2 +1,2 @@
-# MLS-Parser
-A Python Parser for Canadian MLS Listings.
+# libmls
+A Python library to parse the Toronto MLS listings
